@@ -34,8 +34,6 @@
 #include <errno.h>
 #endif
 
-#include <Breakpad/Breakpad.h>
-
 #define SERVICE_NAME "Payment Gate"
 
 PaymentGateService *ppg;
@@ -350,8 +348,6 @@ int unregisterService()
 
 int main(int argc, char **argv)
 {
-    Qwertycoin::Breakpad::ExceptionHandler exceptionHandler;
-
     PaymentGateService pg;
     ppg = &pg;
 
